@@ -55,7 +55,7 @@
         const portfolio = document.querySelector("#portfolio-panel");
         const portfolioLeftButton = document.querySelector("#portfolio-left-button");
         const portfolioRightButton = document.querySelector("#portfolio-right-button");
-        const paintandquestPreviewButton = document.querySelector("#kampus1-button");
+        const kampus1Button = document.querySelector("#kampus1-button");
 
         let y = 0;
         let currentItem = 0;
@@ -82,8 +82,8 @@
               showPortfolioItem(currentItem);
             });
 
-            paintandquestPreviewButton.addEventListener('click', () => {
-              paintandquestPreviewButton.setAttribute("visible", false);
+            kampus1Button.addEventListener('click', () => {
+              kampus1Button.setAttribute("visible", false);
               const testVideo = document.createElement( "video" );
               const canplayWebm = testVideo.canPlayType( 'video/webm; codecs="vp8, vorbis"' );
               if (canplayWebm == "") {
