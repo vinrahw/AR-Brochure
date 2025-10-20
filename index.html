@@ -55,7 +55,7 @@
         const portfolio = document.querySelector("#portfolio-panel");
         const portfolioLeftButton = document.querySelector("#portfolio-left-button");
         const portfolioRightButton = document.querySelector("#portfolio-right-button");
-        const paintandquestPreviewButton = document.querySelector("#paintandquest-preview-button");
+        const paintandquestPreviewButton = document.querySelector("#kampus1-button");
 
         let y = 0;
         let currentItem = 0;
@@ -237,10 +237,10 @@
           <img id="icon-play" src="icons/play.png" />
           <img id="icon-left" src="icons/left.png" />
           <img id="icon-right" src="icons/right.png" />
-          <img id="paintandquest-preview" src="portofolio/kampus1.png" />
+          <img id="kampus1" src="portofolio/kampus1.png" />
           <video id="paintandquest-video-webm" autoplay="false" loop="true" src="portofolio/example.webm"></video>
-          <img id="coffeemachine-preview" src="portofolio/kampus2.png" />
-          <img id="peak-preview" src="portofolio/kampus3.png" />
+          <img id="kampus2" src="portofolio/kampus2.png" />
+          <img id="kampus3" src="portofolio/kampus3.png" />
           
           <a-asset-item id="avatarModel" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.2/examples/image-tracking/assets/card-example/softmind/scene.gltf"></a-asset-item>
         </a-assets>
@@ -255,15 +255,15 @@
             <a-text value="Portfolio" color="black" align="center" width="2" position="0 0.4 0"></a-text>
             <a-entity id="portfolio-item0">
               <a-video id="paintandquest-video-link" webkit-playsinline playsinline width="1" height="0.552" position="0 0 0"></a-video>
-              <a-image id="paintandquest-preview-button" class="clickable" src="#paintandquest-preview" alpha-test="0.5" position="0 0 0" height="0.552" width="1">
+              <a-image id="kampus1-button" class="clickable" src="#kampus1" alpha-test="0.5" position="0 0 0" height="0.552" width="1">
               </a-image>
             </a-entity>
             <a-entity id="portfolio-item1" visible=false>
-              <a-image class="clickable" src="#coffeemachine-preview" alpha-test="0.5" position="0 0 0" height="0.552" width="1">
+              <a-image class="clickable" src="#kampus2" alpha-test="0.5" position="0 0 0" height="0.552" width="1">
               </a-image>
             </a-entity>
             <a-entity id="portfolio-item2" visible=false>
-              <a-image class="clickable" src="#peak-preview" alpha-test="0.5" position="0 0 0" height="0.552" width="1">
+              <a-image class="clickable" src="#kampus3" alpha-test="0.5" position="0 0 0" height="0.552" width="1">
               </a-image>
             </a-entity>
 
