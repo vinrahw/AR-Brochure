@@ -242,20 +242,21 @@
           <img id="kampus2" src="portofolio/kampus2.png" />
           <img id="kampus3" src="portofolio/kampus3.png" />
 			
-          <a-asset-item id="avatarModel" src="example.webm"></a-asset-item>
+          <!-- <a-asset-item id="avatarModel" src="example.webm"></a-asset-item> -->
         </a-assets>
 
         <a-camera position="0 0 0" look-controls="enabled: false" cursor="fuse: false; rayOrigin: mouse;" raycaster="far: 10000; objects: .clickable">
         </a-camera>
 
         <a-entity id="mytarget" mytarget mindar-image-target="targetIndex: 0">
-         <a-plane src="#kampus1-video-webm" position="0 0 0" height="0.552" width="1" rotation="0 0 0"></a-plane>
+         <a-plane src="#kampus1-video-webm" position="0 0 0" height="0.552" width="1" rotation="0 0 0">
+		 <a-video id="kampus1-video-link" webkit-playsinline playsinline width="1" height="0.552" position="0 0 0"></a-video>
+         <a-image id="kampus1-button" class="clickable" src="#kampus1" alpha-test="0.5" position="0 0 0" height="0.8" width="1"> </a-plane>
 
           <a-entity visible=false id="portfolio-panel" position="0 0 -0.01">
             <a-text value="Universitas Muhammadiyah Sidoarjo" color="black" align="center" width="2" position="0 0.4 0"></a-text>
             <a-entity id="portfolio-item0">
-              <a-video id="kampus1-video-link" webkit-playsinline playsinline width="1" height="0.552" position="0 0 0"></a-video>
-              <a-image id="kampus1-button" class="clickable" src="#kampus1" alpha-test="0.5" position="0 0 0" height="0.8" width="1">
+			  <a-image class="clickable" src="#kampus1" alpha-test="0.5" position="0 0 0" height="0.8" width="1">
               </a-image>
             </a-entity>
             <a-entity id="portfolio-item1" visible=false>
