@@ -55,7 +55,7 @@
         const portfolio = document.querySelector("#portfolio-panel");
         const portfolioLeftButton = document.querySelector("#portfolio-left-button");
         const portfolioRightButton = document.querySelector("#portfolio-right-button");
-        const kampus1Button = document.querySelector("#kampus1-button");
+        const kampusButton = document.querySelector("#kampus-button");
 
         let y = 0;
         let currentItem = 0;
@@ -82,16 +82,16 @@
               showPortfolioItem(currentItem);
             });
 
-            kampus1Button.addEventListener('click', () => {
-              kampus1Button.setAttribute("visible", false);
+            kampusButton.addEventListener('click', () => {
+              kampusButton.setAttribute("visible", false);
               const testVideo = document.createElement( "video" );
               const canplayWebm = testVideo.canPlayType( 'video/webm; codecs="vp8, vorbis"' );
               if (canplayWebm == "") {
-                document.querySelector("#kampus1-video-link").setAttribute("src", "#kampus1-video-mp4");
-                document.querySelector("#kampus1-video-mp4").play();
+                document.querySelector("#kampus-video-link").setAttribute("src", "#kampus-video-mp4");
+                document.querySelector("#kampus-video-mp4").play();
               } else {
-                document.querySelector("#kampus1-video-link").setAttribute("src", "#kampus1-video-webm");
-                document.querySelector("#kampus1-video-webm").play();
+                document.querySelector("#kampus-video-link").setAttribute("src", "#kampus-video-webm");
+                document.querySelector("#kampus-video-webm").play();
               }
             });
 
