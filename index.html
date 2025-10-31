@@ -142,7 +142,7 @@
       body {
         margin: 0;
       }
-      .example-container {
+      .kampus-container {
         overflow: hidden;
         position: absolute;
         width: 100%;
@@ -155,7 +155,7 @@
 		  -webkit-text-fill-color: white; /* Mengatur warna isian teks (opsional, untuk kontras) */
 		 }
      
-      #example-scanning-overlay {
+      #kampus-scanning-overlay {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -168,19 +168,19 @@
 	z-index: 2;
       }
       @media (min-aspect-ratio: 1/1) {
-	#example-scanning-overlay .inner {
+	#kampus-scanning-overlay .inner {
 	  width: 50vh;
 	  height: 50vh;
 	}
       }
       @media (max-aspect-ratio: 1/1) {
-	#example-scanning-overlay .inner {
+	#kampus-scanning-overlay .inner {
 	  width: 80vw;
 	  height: 80vw;
 	}
       }
 
-      #example-scanning-overlay .inner {
+      #kampus-scanning-overlay .inner {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -199,17 +199,17 @@
 	background-size: 40px 40px;
       }
 
-      #example-scanning-overlay.hidden {
+      #kampus-scanning-overlay.hidden {
 	display: none;
       }
 
-      #example-scanning-overlay img {
+      #kampus-scanning-overlay img {
 	opacity: 0.6;
 	width: 90%;
 	align-self: center;
       }
 
-      #example-scanning-overlay .inner .scanline {
+      #kampus-scanning-overlay .inner .scanline {
 	position: absolute;
 	width: 100%;
 	height: 10;
@@ -223,18 +223,18 @@
     </style>
   </head>
   <body>
-    <div class="example-container">
-      <div id="example-scanning-overlay" class="hidden">
+    <div class="kampus-container">
+      <div id="kampus-scanning-overlay" class="hidden">
 	<div class="inner">
 	  <img src="portofolio/klik.png"/>
 	  <div class="scanline"></div>
 	</div>
       </div>
 
-      <a-scene mindar-image="imageTargetSrc: markeraku.mind; showStats: false; uiScanning: #example-scanning-overlay;" embedded color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+      <a-scene mindar-image="imageTargetSrc: markeraku.mind; showStats: false; uiScanning: #kampus-scanning-overlay;" embedded color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
         <a-assets>
           <!-- <img id="card" src="portofolio/marker.png" /> -->
-		  <video id="kampus-video-webm" autoplay="false" loop="true" src="portofolio/example.webm"></video>
+		  <video id="kampus-video-webm" autoplay="false" loop="true" src="portofolio/kampus.webm"></video>
 		  <img id="kampus-klik" src="portofolio/klik.png" />
 		  <img id="nama-umsida" src="icons/umsida.png">
           <img id="icon-web" src="icons/web.png">
@@ -246,11 +246,11 @@
           <img id="icon-left" src="icons/left.png" />
           <img id="icon-right" src="icons/right.png" />
           <img id="kampus1" src="portofolio/kampus1.png" />
-          <!-- <video id="kampus1-video-webm" autoplay="false" loop="true" src="portofolio/example.webm"></video> -->
+          <!-- <video id="kampus1-video-webm" autoplay="false" loop="true" src="portofolio/kampus.webm"></video> -->
           <img id="kampus2" src="portofolio/kampus2.png" />
           <img id="kampus3" src="portofolio/kampus3.png" />
 			
-          <!-- <a-asset-item id="avatarModel" src="example.webm"></a-asset-item> -->
+          <!-- <a-asset-item id="avatarModel" src="kampus.webm"></a-asset-item> -->
         </a-assets>
 
         <a-camera position="0 0 0" look-controls="enabled: false" cursor="fuse: false; rayOrigin: mouse;" raycaster="far: 10000; objects: .clickable">
