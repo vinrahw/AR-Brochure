@@ -228,7 +228,7 @@
       <a-scene mindar-image="imageTargetSrc: markeraku.mind; showStats: false; uiScanning: #example-scanning-overlay;" embedded color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
         <a-assets>
           <!-- <img id="card" src="portofolio/marker.png" /> -->
-		  <video id="kampus-video-webm" autoplay="false" loop="true" src="portofolio/example.webm"></video>
+		  <video id="kampus-video-webm" autoplay="true" loop="true" src="portofolio/example.webm"></video>
 		  <img id="icon-umsida" src="icons/umsida.png">
           <img id="icon-web" src="icons/web.png">
           <img id="icon-location" src="icons/location.png" />
@@ -251,8 +251,8 @@
 
         <a-entity id="mytarget" mytarget mindar-image-target="targetIndex: 0">
          <a-plane src="#kampus-video-webm" position="0 0 0" height="0.552" width="1" rotation="0 0 0">
-		 <a-video id="kampus-video-link" webkit-playsinline playsinline width="1" height="0.552" position="0 0 0"></a-video>
-         <a-image id="kampus-button" class="clickable" src="#kampus-video-webm" alpha-test="0.5" position="0 0 0" height="0.8" width="1"> </a-plane>
+		 <a-video id="kampus-video-link" webkit-playsinline playsinline width="1" height="0.552" position="0 -0.1 0"></a-video>
+         <a-image id="kampus-button" class="clickable" src="#kampus-video-webm" alpha-test="0.5" position="0 -0.1 0" height="0.8" width="1"> </a-plane>
 
           <a-entity visible=false id="portfolio-panel" position="0 0 -0.01">
 			  <a-image src="#icon-umsida" position="0 0.5 0"></a-image>
