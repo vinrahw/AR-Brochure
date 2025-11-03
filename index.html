@@ -10,7 +10,7 @@
         let y = 0;
         const tiktokButton = document.querySelector("#tiktok-button");
         const webButton = document.querySelector("#web-button");
-        const  profileButton = document.querySelector("# profile-button");
+        const  profileButton = document.querySelector("#profile-button");
         const locationButton = document.querySelector("#location-button");
         const text = document.querySelector("#text");
 
@@ -32,7 +32,7 @@
         });
         profileButton.addEventListener('click', function (evt) {
           window.location.href="https://www.profile.com/admisiumsida/";
-          currentTab = ' profile';
+          currentTab = 'profile';
         });
         tiktokButton.addEventListener('click', function (evt) {
           window.location.href="https://www.tiktok.com/@admisiumsida";
@@ -291,7 +291,7 @@
             animation="property: scale; to: 1.2 1.2 1.2; dur: 1000; easing: easeInOutQuad; loop: true; dir: alternate"
           ></a-image>
 
-          <a-image visible=false id=" profile-button" class="clickable" src="#icon-profile"  position="0.14 -0.5 0" height="0.15" width="0.15"
+          <a-image visible=false id="profile-button" class="clickable" src="#icon-profile"  position="0.14 -0.5 0" height="0.15" width="0.15"
             animation="property: scale; to: 1.2 1.2 1.2; dur: 1000; easing: easeInOutQuad; loop: true; dir: alternate"
           ></a-image>
 
