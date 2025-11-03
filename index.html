@@ -8,18 +8,18 @@
     <script>
       const showInfo = () => {
         let y = 0;
-        const profileButton = document.querySelector("#profile-button");
+        const tiktokButton = document.querySelector("#tiktok-button");
         const webButton = document.querySelector("#web-button");
-        const emailButton = document.querySelector("#email-button");
+        const  instagramButton = document.querySelector("# instagram-button");
         const locationButton = document.querySelector("#location-button");
         const text = document.querySelector("#text");
 
-        profileButton.setAttribute("visible", true);
+        tiktokButton.setAttribute("visible", true);
         setTimeout(() => {
           webButton.setAttribute("visible", true);
         }, 200);
         setTimeout(() => {
-          emailButton.setAttribute("visible", true);
+           instagramButton.setAttribute("visible", true);
         }, 400);
         setTimeout(() => {
           locationButton.setAttribute("visible", true);
@@ -27,20 +27,20 @@
 
         let currentTab = '';
         webButton.addEventListener('click', function (evt) {
-          text.setAttribute("value", "https://admisi.umsida.ac.id");
+          window.location.href="https://admisi.umsida.ac.id";
           currentTab = 'web';
         });
-        emailButton.addEventListener('click', function (evt) {
-          text.setAttribute("value", "admisi@umsida.ac.id");
-          currentTab = 'email';
+        instagramButton.addEventListener('click', function (evt) {
+          window.location.href="https://www.instagram.com/admisiumsida/";
+          currentTab = ' instagram';
         });
-        profileButton.addEventListener('click', function (evt) {
-          window.location.href="https://admisi.umsida.ac.id";
-          currentTab = 'profile';
+        tiktokButton.addEventListener('click', function (evt) {
+          window.location.href="https://www.tiktok.com/@admisiumsida";
+          currentTab = 'tiktok';
         });
         locationButton.addEventListener('click', function (evt) {
           console.log("loc");
-          text.setAttribute("value", "Universitas Muhammadiyah Sidoarjo");
+          window.location.href="https:https://share.google/UF7NrTTiAC3CgPDsf";
           currentTab = 'location';
         });
 
@@ -239,9 +239,9 @@
 		  <img id="nama-umsida" src="icons/umsida.png">
           <img id="icon-web" src="icons/web.png">
           <img id="icon-location" src="icons/location.png" />
-          <img id="icon-profile" src="icons/profile.png" />
+          <img id="icon-tiktok" src="icons/tiktok.png" />
           <img id="icon-phone" src="icons/phone.png" />
-          <img id="icon-email" src="icons/email.png" />
+          <img id="icon- instagram" src="icons/ instagram.png" />
           <img id="icon-play" src="icons/play.png" />
           <img id="icon-left" src="icons/left.png" />
           <img id="icon-right" src="icons/right.png" />
@@ -283,7 +283,7 @@
           </a-entity>
 
 		<!-- //Bagian bawah untuk alamat IG dll -->
-       	  <a-image visible=false id="profile-button" class="clickable" src="#icon-profile" position="-0.42 -0.5 0" height="0.15" width="0.15"
+       	  <a-image visible=false id="tiktok-button" class="clickable" src="#icon-tiktok" position="-0.42 -0.5 0" height="0.15" width="0.15"
             animation="property: scale; to: 1.2 1.2 1.2; dur: 1000; easing: easeInOutQuad; loop: true; dir: alternate"
           ></a-image>
 
@@ -291,7 +291,7 @@
             animation="property: scale; to: 1.2 1.2 1.2; dur: 1000; easing: easeInOutQuad; loop: true; dir: alternate"
           ></a-image>
 
-          <a-image visible=false id="email-button" class="clickable" src="#icon-email"  position="0.14 -0.5 0" height="0.15" width="0.15"
+          <a-image visible=false id=" instagram-button" class="clickable" src="#icon- instagram"  position="0.14 -0.5 0" height="0.15" width="0.15"
             animation="property: scale; to: 1.2 1.2 1.2; dur: 1000; easing: easeInOutQuad; loop: true; dir: alternate"
           ></a-image>
 
