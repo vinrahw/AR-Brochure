@@ -10,7 +10,7 @@
         let y = 0;
         const tiktokButton = document.querySelector("#tiktok-button");
         const webButton = document.querySelector("#web-button");
-        const  profileButton = document.querySelector("#profile-button");
+        const  instagramButton = document.querySelector("#instagram-button");
         const locationButton = document.querySelector("#location-button");
         const text = document.querySelector("#text");
 
@@ -19,7 +19,7 @@
           webButton.setAttribute("visible", true);
         }, 200);
         setTimeout(() => {
-           profileButton.setAttribute("visible", true);
+           instagramButton.setAttribute("visible", true);
         }, 400);
         setTimeout(() => {
           locationButton.setAttribute("visible", true);
@@ -30,9 +30,9 @@
           window.location.href="https://admisi.umsida.ac.id";
           currentTab = 'web';
         });
-        profileButton.addEventListener('click', function (evt) {
-          window.location.href="https://www.profile.com/admisiumsida/";
-          currentTab = 'profile';
+        instagramButton.addEventListener('click', function (evt) {
+          window.location.href="https://www.instagram.com/admisiumsida?igsh=MXVhMmwxeWZ0a3c5eA%3D%3D&utm_source=qr";
+          currentTab = 'instagram';
         });
         tiktokButton.addEventListener('click', function (evt) {
           window.location.href="https://www.tiktok.com/@admisiumsida";
@@ -241,7 +241,7 @@
           <img id="icon-location" src="icons/location.png" />
           <img id="icon-tiktok" src="portofolio/tiktok.png" />
           <img id="icon-phone" src="icons/tiktok.png" />
-          <img id="icon-profile" src="portofolio/instagram.png" />
+          <img id="icon-instagram" src="portofolio/instagram.png" />
           <img id="icon-play" src="icons/play.png" />
           <img id="icon-left" src="icons/left.png" />
           <img id="icon-right" src="icons/right.png" />
@@ -291,7 +291,7 @@
             animation="property: scale; to: 1.2 1.2 1.2; dur: 1000; easing: easeInOutQuad; loop: true; dir: alternate"
           ></a-image>
 
-          <a-image visible=false id="profile-button" class="clickable" src="#icon-profile"  position="0.14 -0.5 0" height="0.15" width="0.15"
+          <a-image visible=false id="instagram-button" class="clickable" src="#icon-instagram"  position="0.14 -0.5 0" height="0.15" width="0.15"
             animation="property: scale; to: 1.2 1.2 1.2; dur: 1000; easing: easeInOutQuad; loop: true; dir: alternate"
           ></a-image>
 
@@ -303,7 +303,7 @@
           <!-- <a-gltf-model id="avatar" rotation="0 0 0" position="0 -0.25 0" scale="0.004 0.004 0.004" src="#avatarModel"></a-gltf-model> -->
 			
 		
-          <a-text id="text" class="clickable" value="" color="black" align="center" width="2" position="0 -1 0" geometry="primitive:plane; height: 0.1; width: 2;" material="opacity: 0.5"></a-text>
+          <!-- <a-text id="text" class="clickable" value="" color="black" align="center" width="2" position="0 -1 0" geometry="primitive:plane; height: 0.1; width: 2;" material="opacity: 0.5"></a-text> -->
         </a-entity>
       </a-scene>
     </div>
