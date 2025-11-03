@@ -10,7 +10,7 @@
         let y = 0;
         const tiktokButton = document.querySelector("#tiktok-button");
         const webButton = document.querySelector("#web-button");
-        const  instagramButton = document.querySelector("# instagram-button");
+        const  profileButton = document.querySelector("# profile-button");
         const locationButton = document.querySelector("#location-button");
         const text = document.querySelector("#text");
 
@@ -19,7 +19,7 @@
           webButton.setAttribute("visible", true);
         }, 200);
         setTimeout(() => {
-           instagramButton.setAttribute("visible", true);
+           profileButton.setAttribute("visible", true);
         }, 400);
         setTimeout(() => {
           locationButton.setAttribute("visible", true);
@@ -30,9 +30,9 @@
           window.location.href="https://admisi.umsida.ac.id";
           currentTab = 'web';
         });
-        instagramButton.addEventListener('click', function (evt) {
-          window.location.href="https://www.instagram.com/admisiumsida/";
-          currentTab = ' instagram';
+        profileButton.addEventListener('click', function (evt) {
+          window.location.href="https://www.profile.com/admisiumsida/";
+          currentTab = ' profile';
         });
         tiktokButton.addEventListener('click', function (evt) {
           window.location.href="https://www.tiktok.com/@admisiumsida";
@@ -241,7 +241,7 @@
           <img id="icon-location" src="icons/location.png" />
           <img id="icon-tiktok" src="icons/tiktok.png" />
           <img id="icon-phone" src="icons/phone.png" />
-          <img id="icon- instagram" src="icons/ instagram.png" />
+          <img id="icon- profile" src="icons/ profile.png" />
           <img id="icon-play" src="icons/play.png" />
           <img id="icon-left" src="icons/left.png" />
           <img id="icon-right" src="icons/right.png" />
@@ -291,7 +291,7 @@
             animation="property: scale; to: 1.2 1.2 1.2; dur: 1000; easing: easeInOutQuad; loop: true; dir: alternate"
           ></a-image>
 
-          <a-image visible=false id=" instagram-button" class="clickable" src="#icon- instagram"  position="0.14 -0.5 0" height="0.15" width="0.15"
+          <a-image visible=false id=" profile-button" class="clickable" src="#icon- profile"  position="0.14 -0.5 0" height="0.15" width="0.15"
             animation="property: scale; to: 1.2 1.2 1.2; dur: 1000; easing: easeInOutQuad; loop: true; dir: alternate"
           ></a-image>
 
